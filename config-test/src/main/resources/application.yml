@@ -11,10 +11,10 @@ spring:
           uri: https://github.com/wanghongqi/springcloudeureka_test
           default-label: master #配置文件分支
           search-paths: config  #配置文件所在根目录
-    bus:
-      enabled: true
-      trace:
-        enabled: true
+#    bus:
+#      enabled: true
+#      trace:
+#        enabled: true
   rabbitmq:
     host: 192.168.81.161
     port: 5672
