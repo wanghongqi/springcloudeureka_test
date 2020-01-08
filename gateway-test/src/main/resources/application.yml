@@ -24,7 +24,7 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://10.1.83.108:14001/eureka/
+      defaultZone: http://user:password@10.1.83.108:14001/eureka/
 
 hystrix:
   command:

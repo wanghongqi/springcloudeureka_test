@@ -1,0 +1,17 @@
+server:
+  port: 14003
+
+spring:
+  application:
+    name: config-test
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wanghongqi/springcloudeureka_test
+          basedir: config
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://10.1.83.108:14001/eureka/
