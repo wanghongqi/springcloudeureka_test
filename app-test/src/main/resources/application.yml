@@ -1,0 +1,11 @@
+server:
+  port: 14011
+
+spring:
+  application:
+    name: app-test
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://10.1.83.108:14001/eureka/

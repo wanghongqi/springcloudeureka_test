@@ -1,0 +1,16 @@
+server:
+  port: 14001
+
+eureka:
+  instance:
+    hostname: 10.1.83.108
+  server:
+    renewalPercentThreshold: 0.49
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+#security:
+#  basic:
+#    enabled: false

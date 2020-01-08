@@ -1,0 +1,35 @@
+server:
+  port: 14002
+
+spring:
+  application:
+    name: gateway-test
+  cloud:
+    gateway:
+      default-filters:
+        - name: Hystrix
+          args:
+            name: fallbackcmd
+            fallbackUri: forward:/fallbackcontroller
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: '*'
+            allowedMethods: [GET]
+      routes:
+        - id: app-test
+          uri: lb://app-test
+          predicates: [Path=/test/**]
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://10.1.83.108:14001/eureka/
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000
