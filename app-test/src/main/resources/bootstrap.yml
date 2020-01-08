@@ -5,7 +5,6 @@ spring:
     active: dev
   cloud:
     config:
-      name: globalConfig
       label: master
       profile: ${spring.profiles.active}
       discovery:

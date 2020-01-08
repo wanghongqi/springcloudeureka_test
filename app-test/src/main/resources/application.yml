@@ -1,4 +1,11 @@
 server:
   port: 14011
 
-
+management:
+  endpoint:
+    shutdown:
+      enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -4,8 +4,6 @@ server:
 spring:
   application:
     name: config-test
-#  config:
-#    name: config-test
   cloud:
     config:
       server:
