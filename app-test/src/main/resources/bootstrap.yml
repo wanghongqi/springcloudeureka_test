@@ -7,6 +7,7 @@ spring:
     config:
       name: globalConfig
       label: master
+      profile: ${spring.profiles.active}
       discovery:
         enabled: true
         service-id: config-test
