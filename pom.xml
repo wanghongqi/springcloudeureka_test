@@ -9,9 +9,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.whq</groupId>
-    <artifactId>springcloudtest</artifactId>
+    <artifactId>springcloudeureka_test</artifactId>
+    <version>1.0.0</version>
     <packaging>pom</packaging>
-    <name>springcloudtest</name>
+    <name>springcloudeureka_test</name>
     <description>Demo project for Spring Boot</description>
 
     <modules>

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: app-test
+  profiles:
+    active: dev
+  cloud:
+    config:
+      name: globalConfig
+      label: master
+      discovery:
+        enabled: true
+        service-id: config-test
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://user:password@10.1.83.108:14001/eureka/

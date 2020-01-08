@@ -4,14 +4,17 @@ server:
 spring:
   application:
     name: config-test
+#  config:
+#    name: config-test
   cloud:
     config:
       server:
         git:
           uri: https://github.com/wanghongqi/springcloudeureka_test
-          basedir: config
+          default-label: master #配置文件分支
+          search-paths: config  #配置文件所在根目录
 
 eureka:
   client:
     service-url:
-      defaultZone: http://10.1.83.108:14001/eureka/
+      defaultZone: http://user:password@10.1.83.108:14001/eureka/
