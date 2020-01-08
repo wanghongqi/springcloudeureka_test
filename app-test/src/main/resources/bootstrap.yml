@@ -10,6 +10,11 @@ spring:
       discovery:
         enabled: true
         service-id: config-test
+  rabbitmq:
+    host: 192.168.81.161
+    port: 5672
+    username: guest
+    password: guest
 
 eureka:
   client:
